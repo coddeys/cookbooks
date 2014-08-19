@@ -16,3 +16,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
+user 'deployer' do
+  password node[:user][:password]
+  home "/home/deployer"
+  shell "/bin/zsh"
+end
+
